@@ -1,4 +1,4 @@
-import Country from "./components/country";
+import Country from "./components/Country";
 
 
 const App = () => {

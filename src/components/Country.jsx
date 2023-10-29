@@ -14,19 +14,28 @@ const Country = () => {
       .then(data => setCountries(data));
     },[])
 
-    const handleVisitedCountry =country =>{
+    const handleVisitedCountry = country =>{
       console.log('add this to your visited county');
-      console.log(country);
+      const newVisitedCountry = [...visitedCountry, country];  //can not use push pop here //insted of push pop use these
+      setVisitedCountry(newVisitedCountry);
     }
   
     return (
       <div>
         <h3>Lets make a tour</h3>
         <h2>TotalCountries: {countries.length}</h2>
+        <div>
+            <h5>Visited Country: {visitedCountry.length}</h5> 
+            <ul>
+                {
+                  visitedCountry.map(country => <li key={country.cca3}>{country.name.common}</li>)
+                }
+            </ul>
+        </div>
         <div className="parentCounty">
           {
             countries.map(country => <MyCountry key={countries.cca3}
-            proops={country} handleVisitedCountry={handleVisitedCountry}></MyCountry>)
+            country={country} handleVisitedCountry={handleVisitedCountry}></MyCountry>)
           }
         </div>
         
