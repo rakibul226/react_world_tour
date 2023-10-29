@@ -1,0 +1,15 @@
+.myCountry{
+    border: 1px solid skyblue;
+    margin: 50px;
+    padding:4px;
+    padding-left: 40px;
+}
+
+.parentCounty{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.visited{
+    background-color: grey;
+}
