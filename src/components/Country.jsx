@@ -28,13 +28,13 @@ const Country = () => {
             <h5>Visited Country: {visitedCountry.length}</h5> 
             <ul>
                 {
-                  visitedCountry.map(country => <li key={country.cca3}>{country.name.common}</li>)
+                  visitedCountry.map(country => <li key={country.ccn3}>{country.name.common}</li>)
                 }
             </ul>
         </div>
         <div className="parentCounty">
           {
-            countries.map(country => <MyCountry key={countries.cca3}
+            countries.map(country => <MyCountry key={country.cca2}
             country={country} handleVisitedCountry={handleVisitedCountry}></MyCountry>)
           }
         </div>
