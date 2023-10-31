@@ -22,23 +22,34 @@ const Country = () => {
   
     return (
       <div>
-        
-        <h3>Lets make a tour</h3>
+      
         <h2>TotalCountries: {countries.length}</h2>
         <div>
             <h5>Visited Country: {visitedCountry.length}</h5> 
-            <ul>
+            <ul className="visitedFlag">
+                <div>
                 {
-                  visitedCountry.map(country => <li key={country.ccn3}>{country.name.common}</li>)
+                  // visitedCountry.map(country => <li key={country.ccn3}>{country.name.common}</li>)
+                  visitedCountry.map(country => <div className="visitedFlag" key={country.ccn3}> 
+                                                    <li>{country.name.common}</li> 
+                                                    {<img src={country.flags.png} alt="" />}
+                                                </div> )
                 }
+                </div>
             </ul>
         </div>
-        <div>
+
+
+        {/* <div>
               <h5>Visited Country</h5>
-                <ul>
-                  
-                </ul>
-        </div>
+            <ul className="visitedFlag">
+                {
+                  visitedCountry.map(country => <img src={country.flags.png} alt="" />)
+                }
+            </ul>             
+        </div> */}
+
+
         <div className="parentCounty">
           {
             countries.map(country => <MyCountry key={country.cca2}

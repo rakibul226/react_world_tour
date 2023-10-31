@@ -13,3 +13,15 @@
 .visited{
     background-color: grey;
 }
+.visitedFlag{
+
+margin-left: 5px;
+display: flex;
+}
+
+.visitedFlag img{
+    padding-top: 8px;
+    width: 15px;
+    height: 10px;
+    margin-left: 5px;
+}
