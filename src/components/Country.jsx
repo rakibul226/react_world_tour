@@ -33,6 +33,12 @@ const Country = () => {
                 }
             </ul>
         </div>
+        <div>
+              <h5>Visited Country</h5>
+                <ul>
+                  
+                </ul>
+        </div>
         <div className="parentCounty">
           {
             countries.map(country => <MyCountry key={country.cca2}
