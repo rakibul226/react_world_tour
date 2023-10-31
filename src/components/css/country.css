@@ -45,7 +45,9 @@ display: flex;
   
     text-align: center;
 }
-
+.btn{
+    margin-top: 2px;
+}
 .margin{
     margin-left: 100px;
 }

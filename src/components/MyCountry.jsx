@@ -10,10 +10,7 @@ const MyCountry = ({country ,handleVisitedCountry,handleAddFlag}) => {
     const handleVisited = () =>{
         setVisited(!visited);
     }
-    // const handleVisited = () =>{
-    //     setVisited(true);
-    // }
-
+  
     return (
         <div className={`myCountry ${visited ? 'visited': 'non-visited'}`}>
             <h3 style={{color:visited ? 'black':'white'}}>Name: {name?.common}</h3>
