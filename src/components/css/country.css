@@ -3,6 +3,11 @@
     margin: 50px;
     padding:4px;
     padding-left: 40px;
+    gap: 10px;
+}
+.myCountry img{
+    height: 160px;
+    width: 320px;
 }
 
 .parentCounty{
@@ -24,4 +29,23 @@ display: flex;
     width: 15px;
     height: 10px;
     margin-left: 5px;
+}
+
+.allVisitedFlag{
+    display: flex;
+    gap: 5px;
+    margin-left: 120px;
+}
+.allVisitedFlag img{
+    height: 50px;
+    width: 80px;
+}
+
+.txt{
+  
+    text-align: center;
+}
+
+.margin{
+    margin-left: 100px;
 }
