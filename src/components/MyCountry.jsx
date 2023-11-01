@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './css/country.css'
+import PropTypes from 'prop-types';
 
 const MyCountry = ({country ,handleVisitedCountry,handleAddFlag}) => {
     const {name,flags} = country;
@@ -29,5 +30,12 @@ const MyCountry = ({country ,handleVisitedCountry,handleAddFlag}) => {
         </div>
     );
 };
+
+
+MyCountry.propTypes ={
+   country: PropTypes.array.isRequired,
+   handleVisitedCountry: PropTypes.array,
+   handleAddFlag: PropTypes.array
+}
 
 export default MyCountry;

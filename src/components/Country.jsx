@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useEffect } from "react";
-import MyCountry from "./myCountry";
+import MyCountry from "./MyCountry";
 import './css/country.css'
 
 
